@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONTACT FORM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="device=width-device, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body style="color: lightsalmon; background-color: lightseagreen">
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-5">
+            <h1 class="text-center" bg-success>Please Enter Details</h1>
+            <form method="POST">
+                {% csrf_token %}
+                {{ cform }}<br>
+                <center>
+                    <input type="submit" value="OK" class="btn btn-dark">
+                </center>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
